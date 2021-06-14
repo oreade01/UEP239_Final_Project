@@ -19,17 +19,18 @@ This project pinpoints the most suitable zipcodes for young families to move in 
   - `contextily`: provides the basemaps used in this analysis for geographical context
 
 ## Data 
-  - MPO_Boundaries: shapefile from MassDOT
-  - Zip Code boundaries: shapefile from Census Bureau
-  - School points, library points, and farmer market points: shapefiles from MassGIS
-  - ACS data: 2019 American Community Survey Data
+  - ```MPO_Boundaries```: This ESRI shapefile is from the Massachusetts Department of Transportation, and is a polygon feature.
+  - ```Zip Codes```: This shapefile is from the United States Census Bureau; the polygons represent 5 digit zip code tabulation areas (ZCTA) boundaries in Massachusetts from 2010
+  - ```School points```, ```library points```, and ```farmer market points```: all of these point data are shapefiles, and are from [MassGIS](https://www.mass.gov/orgs/massgis-bureau-of-geographic-information). The CRS of all shapefiles and basemaps used in this analysis is the Massachusetts Mainland Projection (EPSG:26986).
+  - ```ACS, S1401```: 2019 American Community Survey Data from the United States Census Bureau. This data is in the csv format, and describes various measures of school enrollment. For this project, I use the column that describes the total population 3 years and older enrolled in school (kindergarten to 12th grade)
 
- Python packages used, describe in the environment.yml file
 
- Hours spent: Approximately 15
+ ## Hours spent
+ Approximately 25
 
 ## Citations: 
-    <https://matplotlib.org/stable/tutorials/colors/colormaps.html>
-    <https://www.geeksforgeeks.org/python-pandas-split-strings-into-two-list-columns-using-str-split/>
+  - https://matplotlib.org/stable/tutorials/colors/colormaps.html
+  - https://www.geeksforgeeks.org/python-pandas-split-strings-into-two-list-columns-using-str-split/
+  - https://commonmark.org/help/
     
-     I also received help from Phil Gomez in the data lab, and all Professors offering office hours. 
+  - I also received help from Phil Gomez in the data lab, and all Professors offering office hours. 
