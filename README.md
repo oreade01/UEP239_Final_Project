@@ -2,7 +2,7 @@
 
 ## Abstract 
 
-This project pinpoints the most suitable zipcodes for young families to move in the Boston Metropolitan area. The variables included in the analysis are concentrations of points of interest (schools, libraries, and farmers markets), and the percent of kindergarten enrollment.
+This project pinpoints the most suitable zipcodes for young families to move in the Boston Metropolitan area. The variables included in the analysis are concentrations of points of interest (schools, libraries, and farmers markets), and the proportion of school enrollment, diversity, and other young families.
 
 ## How to run and reproduce
   1) First, open your Windows Terminal (or preferred Powershell terminal), and clone this repository.
@@ -23,6 +23,8 @@ This project pinpoints the most suitable zipcodes for young families to move in 
   - ```Zip Codes```: This shapefile is from the United States Census Bureau; the polygons represent 5 digit zip code tabulation areas (ZCTA) boundaries in Massachusetts from 2010
   - ```School points```, ```library points```, and ```farmer market points```: all of these point data are shapefiles, and are from [MassGIS](https://www.mass.gov/orgs/massgis-bureau-of-geographic-information). The CRS of all shapefiles and basemaps used in this analysis is the Massachusetts Mainland Projection (EPSG:26986).
   - ```ACS, S1401```: 2019 American Community Survey Data from the United States Census Bureau. This data is in the csv format, and describes various measures of school enrollment. For this project, I use the column that describes the total population 3 years and older enrolled in school (kindergarten to 12th grade)
+  - ```ACS, S0101```: 2019 American Community Survey Data from the United States Census Bureau. Also in csv format, this data describes age and sex data in the US. For this project, I use the column that describes the total population under the age of five.
+  - ```ACS, S1601```: 2019 American Community Survey Data from the United States Census Bureau. This csv data includes information about language speaking patterns in the U.S.
 
 
  ## Hours spent
